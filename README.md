@@ -53,7 +53,3 @@ slide_001,/path/to/slide_001.pt,0
 ```bash
 python scripts/train.py --config configs/config.yaml
 ```
-
-## Notes
-
-This is a clean research implementation template. You should connect your exact patch extraction/IRM feature files and concept-anchor embeddings before final experiments.
