@@ -1,0 +1,28 @@
+data:
+  train_csv: data/train.csv
+  val_csv: data/val.csv
+  num_classes: 4
+  num_concepts: 16
+  top_m: 64
+
+model:
+  visual_dim: 2048
+  fm_dim: 1024
+  text_dim: 2048
+  hidden_dim: 256
+  gabor_orientations: 6
+  gabor_frequencies: 3
+  graph_k: 8
+  propagation_steps: 1
+  tau_p: 1.0
+  tau_g: 1.0
+
+train:
+  epochs: 100
+  batch_size: 1
+  lr: 0.0001
+  weight_decay: 0.00001
+  lambda_smooth: 0.01
+  focal_gamma: 2.0
+  device: cuda
+  save_path: checkpoints/best_model.pt
